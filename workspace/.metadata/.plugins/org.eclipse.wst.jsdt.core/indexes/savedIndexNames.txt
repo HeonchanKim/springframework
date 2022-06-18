@@ -2,7 +2,6 @@ INDEX VERSION 1.4+C:\springframework\springframework\workspace\.metadata\.plugin
 266709261.index
 1374735572.index
 2487545169.index
-3178133098.index
 2837042051.index
 819415739.index
 927050600.index
