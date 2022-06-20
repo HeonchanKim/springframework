@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=ex00/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.ex00.dependency.qualifier{Computer.java[Computer" modifiers="513" timestamp="1655724894795"/>
+    <typeInfo handle="=ex00/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.ex00.dependency.qualifier{Restaurant.java[Restaurant" modifiers="513" timestamp="1655726367269"/>
+</typeInfoHistroy>

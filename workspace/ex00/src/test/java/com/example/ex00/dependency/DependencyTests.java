@@ -16,13 +16,22 @@ public class DependencyTests {
 	@Autowired
 	private Coding coding;
 	
+	@Autowired 
+	private Restaurant restaurant;
+	
+//	@Test
+//	public void checkDependencyInjection() {
+//		log.info("------------------");
+//		log.info("coding" + coding);
+//		log.info("computer" + coding.getComputer());
+//		log.info("------------------");
+//	}
+	
 	@Test
 	public void checkDependencyInjection() {
 		log.info("------------------");
-		log.info("coding" + coding);
-		log.info("computer" + coding.getComputer());
+		log.info("restaurant" + restaurant);
+		log.info("chef" + restaurant.getChef());
 		log.info("------------------");
 	}
-	
-	
 }

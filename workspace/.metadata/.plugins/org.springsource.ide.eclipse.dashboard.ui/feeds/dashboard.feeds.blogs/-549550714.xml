@@ -5,7 +5,33 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-06-16T07:00:00Z</updated>
+  <updated>2022-06-18T07:00:00Z</updated>
+  <entry>
+    <title>Spring Tools 4.15.1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/18/spring-tools-4-15-1-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2022-06-18:4834</id>
+    <updated>2022-06-18T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.15.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: VScode incorrectly suggests removing @Autowired annotation from methods (&lt;a href="https://github.com/spring-projects/sts4/issues/787"&gt;#787&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: VScode quick fix should not suggest removing @Autowired annotation from JUnit tests (&lt;a href="https://github.com/spring-projects/sts4/issues/786"&gt;#786&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Not able to extract the new version of spring-tool-suite-4-4.15.0.RELEASE-e4.24.0-win32.win32.x86_64.self-extracting.jar on windows 11 (&lt;a href="https://github.com/spring-projects/sts4/issues/788"&gt;#788&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Cannot open Spring Boot Language Server Java Editor settings menu (&lt;a href="https://github.com/spring-projects/sts4/issues/789"&gt;#789&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-17-4151-release-incl-language-servers-version-1360"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-17-4151-release-incl-language-servers-version-1360&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.15.2 is scheduled to be released in early August 2022.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Bootiful Podcast: Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly</title>
     <link rel="alternate" href="https://spring.io/blog/2022/06/16/bootiful-podcast-spring-framework-contributor-s-bastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly" />
@@ -56,6 +82,7 @@
 &lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-commons" class="anchor" name="spring-cloud-commons"&gt;&lt;/a&gt;Spring Cloud Commons&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Adds registration lifecycle listeners (&lt;a href=""&gt;999&lt;/a&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/issues/999"&gt;https://github.com/spring-cloud/spring-cloud-commons/issues/999&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Request data context for blocking LoadBalancer client requests has been made available to lifecycle callbacks (&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/issues/1090"&gt;1090&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The following modules were updated as part of 2022.0.0-M3:&lt;/p&gt;
 &lt;table&gt;
@@ -581,67 +608,6 @@ compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-c
 &lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v2.1.0-M4"&gt;release notes&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-shell/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-shell/docs/2.1.0-M4/site/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Vault 2.4.0-M1 and 3.0.0-M1 available</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/27/spring-vault-2-4-0-m1-and-3-0-0-m1-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2022-05-27:4812</id>
-    <updated>2022-05-27T14:03:38Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;#8217;m happy to announce that Spring Vault &lt;code&gt;2.4.0-M1&lt;/code&gt; and &lt;code&gt;3.0.0-M1&lt;/code&gt; milestones have been released and are now available from &lt;a href="https://repo.spring.io"&gt;repo.spring.io&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Notable new features include:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Support for PEM-encoded certificates and private keys including Elliptic Curve ("EC")&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Support for Vault Repositories using versioned Key/Value secrets engines&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Support for Vault-based RevisionRepository using versioned Key/Value secrets engines&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-vault/wiki/Spring-Vault-2.4.0-M1-Release-Notes"&gt;release notes for more details&lt;/a&gt; and upgrade instructions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Additionally, Spring Vault &lt;code&gt;3.0.0-M1&lt;/code&gt; ships with:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Upgrade to Java 17 baseline, Spring Framework 6&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Upgrade to AWS SDK v2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-vault/wiki/Spring-Vault-3.0.0-M1-Release-Notes"&gt;release notes for more details&lt;/a&gt; and upgrade instructions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="how-can-you-help"&gt;&lt;a class="anchor" href="#how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you&amp;#8217;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-vault/labels/status%3A%20ideal-for-contribution"&gt;"ideal for contribution" tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-vault"&gt;&lt;code&gt;spring-vault&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-vault/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/releases/tag/2.4.0-M1"&gt;Release &lt;code&gt;2.4.0-M1&lt;/code&gt; on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/2.4.0-M1/reference/html/"&gt;Documentation for &lt;code&gt;2.4.0-M1&lt;/code&gt;&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/releases/tag/3.0.0-M1"&gt;Release &lt;code&gt;3.0.0-M1&lt;/code&gt; on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/3.0.0-M1/reference/html/"&gt;Documentation for &lt;code&gt;3.0.0-M1&lt;/code&gt;&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-vault"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
