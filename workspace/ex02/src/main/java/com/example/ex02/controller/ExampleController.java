@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.example.ex02.domain.vo.Product;
+
 import lombok.extern.log4j.Log4j;
 
 @Controller
@@ -107,12 +109,23 @@ public class ExampleController {
 	//- 할인률 버튼은 총 4개의 버튼으로 제작하고,
 	//	각각 10%, 30%, 60%, 90%
 	//- 마지막에 적용 버튼을 제작하여 form태그를 전송한다.
+	@GetMapping("/sale")
+	public String goChangeSale() {
+		return "product/saleChange";
+	}
 	
 	//@PostMapping("/change")
 	//메소드명 : change
 	//상품 모델 객체(Product)로 전체 내용을 전달받는다.
 	//전달받은 상품 가격에 할인률을 적용한 가격을
 	//showChange.jsp로 전달한다.
-	
+	@PostMapping("/change")
+	public String change(Product product, Model model) {
+		log.info(product);
+		double rating = (100 - product.getDiscountRate()) * 0.01;
+		model.addAttribute("originPrice", product.getProductPrice());
+		product.setProductPrice((int)(product.getProductPrice() * rating));
+		return "product/showChange";
+	}
 	
 }
